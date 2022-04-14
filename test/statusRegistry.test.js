@@ -2,7 +2,7 @@
 
 const expect = require('chai').expect
 
-const { StatusRegistry } = require('../index');
+const { StatusRegistry } = require('../dist/index');
 
 describe('StatusRegistry', () => {
   beforeEach('set options', () => {

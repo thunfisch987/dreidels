@@ -9,7 +9,7 @@ const {
 	equal,
 	all,
 	some
-} = require('../purgeOptions');
+} = require('../dist/purgeOptions');
 
 function expectRuleToBeFalse(rule, ruleOpts, value) {
 	const subj = rule(ruleOpts);

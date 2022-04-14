@@ -1,4 +1,4 @@
-const Spinners = require('..');
+const Spinners = require('../dist');
 
 const spinners = new Spinners();
 

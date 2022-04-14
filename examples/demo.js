@@ -1,4 +1,4 @@
-const Spinners = require('..');
+const Spinners = require('../dist');
 
 function wait(ms, cb) {
   setTimeout(cb, ms);

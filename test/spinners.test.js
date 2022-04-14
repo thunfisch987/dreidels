@@ -4,7 +4,7 @@ const expect = require('chai').expect
 const sinon = require('sinon');
 const { Observable } = require('rxjs');
 
-const Spinnies = require('..');
+const Spinnies = require('../dist');
 const { expectToBehaveLikeAnUpdate, expectToBehaveLikeAStatusChange } = require('./behaviours.test');
 
 const _setTimeout = setTimeout;

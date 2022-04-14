@@ -3,8 +3,8 @@
 const expect = require('chai').expect
 
 const EOL = require('os').EOL;
-const { statusOptionsFromNormalUpdate, purgeStatusOptions, purgeSpinnersOptions, purgeSpinnerOptions, colorOptions, breakText, terminalSupportsUnicode } = require('../utils');
-const { dots, dashes } = require('../spinners');
+const { statusOptionsFromNormalUpdate, purgeStatusOptions, purgeSpinnersOptions, purgeSpinnerOptions, colorOptions, breakText, terminalSupportsUnicode } = require('../dist/utils');
+const { dots, dashes } = require('../dist/spinners.json');
 const platformSpinner = terminalSupportsUnicode() ? dots : dashes;
 
 describe('utils', () => {

@@ -4,16 +4,14 @@
   "description": "Create and manage multiple spinners in command-line interface programs",
   "main": "index.js",
   "files": [
-    "index.js",
-    "utils.js",
-    "purgeOptions.js",
+    "dist",
     "package.json",
     "package-lock.json",
-    "spinners.json",
     "README.md"
   ],
   "scripts": {
-    "test": "npx mocha test"
+    "test": "rm -rf ./dist && tsc && npx mocha test",
+    "build": "rm -rf ./dist && tsc"
   },
   "keywords": [
     "node",
@@ -45,18 +43,22 @@
   "license": "MIT",
   "dependencies": {
     "cli-cursor": "^3.0.0",
+    "colorette": "^1.2.1",
     "is-observable": "^2.0.0",
     "is-promise": "^2.1.0",
     "signal-exit": "^3.0.2",
     "strip-ansi": "^5.2.0",
-    "wordwrapjs": "^4.0.0",
-    "colorette": "^1.2.1"
+    "wordwrapjs": "^4.0.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@types/is-promise": "^2.2.0",
+    "@types/signal-exit": "^3.0.1",
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
     "rxjs": "^6.5.3",
-    "sinon": "^7.4.1"
+    "sinon": "^7.4.1",
+    "typescript": "^4.6.3"
   },
   "optionalDependencies": {
     "cli-spinners": "^2.2.0"
